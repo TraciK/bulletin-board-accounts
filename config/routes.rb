@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   # DELETE
   get("/delete_listing/:path_id", { :controller => "listings", :action => "destroy" })
 
+
   #------------------------------
 
   # Routes for the Board resource:
