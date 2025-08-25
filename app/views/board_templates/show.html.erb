@@ -6,7 +6,7 @@
   </ul>
 </nav>
 
-<p>Managed by <%= @the_board.user.email %></p>
+<p>Managed by <%= @the_board.user.username %></p>
 <article>
   <header>
     Active listings
@@ -40,7 +40,7 @@
             </td>
 
             <td>
-            <%= a_listing.user.email %>
+            <%= a_listing.user.username %>
 
             <% if a_listing.user == current_user || current_user == @the_board.user%>
 
